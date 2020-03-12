@@ -1,10 +1,19 @@
-# omega-onion2-coronavirus-oled
+# onion-omega2-coronavirus-oled
 
 > Display coronavirus stats on the Omega Onion 2 OLED Extension
 
 ## Demo
 
-WIP
+![Demo](demo.jpg)
+
+## About
+
+This project uses the [coronavirusapi.me](https://coronavirusapi.me/) GraphQL API to fetch recent coronavirus stats. It then displays them on the OLED screen. Data refetch happens every hour.
+
+## Hardware Requirements
+
+- Onion [Omega2](https://onion.io/store/omega2/)/[2+](https://onion.io/store/omega2p/)/[2 Pro](https://onion.io/store/omega2-pro/) IoT computer
+- [OLED Expansion](https://onion.io/store/oled-expansion/)
 
 ## Installation & Usage
 
