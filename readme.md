@@ -1,6 +1,6 @@
 # onion-omega2-coronavirus-oled
 
-> Display coronavirus stats on the Omega Onion 2 OLED Extension
+> Display coronavirus stats on the Onion OLED Extension
 
 ## Demo
 
