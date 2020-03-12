@@ -36,11 +36,6 @@ const query = `{
 		omegaOled.init().then(() => {
 			omegaOled.write(`Status for ${region}:`);
 			omegaOled.cursor(2, 0);
-			omegaOled.write(`Confirmed: ${stats.confirmed}`);
-			omegaOled.cursor(3, 0);
-			omegaOled.write(`Recovered: ${stats.recovered}`);
-			omegaOled.cursor(4, 0);
-			omegaOled.write(`Deaths: ${stats.deaths}`);
 		});
 	} catch (error) {
 		console.log(error.response.body);
