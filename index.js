@@ -34,19 +34,15 @@ const query = `{
 		});
 
 		omegaOled.init().then(() => {
+			omegaOled.chainMode(true);
 			omegaOled.write(`Status for ${region}:`);
-			setTimeout(() => {
-				omegaOled.cursor(2, 0);
-				omegaOled.write(`Confirmed: ${stats.confirmed}`);
-			}, 1000);
-			setTimeout(() => {
-				omegaOled.cursor(3, 0);	
-				omegaOled.write(`Recovered: ${stats.recovered}`);
-			}, 2000);
-			setTimeout(() => {
-				omegaOled.cursor(4, 0);
-				omegaOled.write(`Deaths: ${stats.deaths}`);
-			}, 3000);
+			omegaOled.cursor(2, 0);
+			omegaOled.write(`Confirmed: ${stats.confirmed}`);
+			omegaOled.cursor(3, 0);
+			omegaOled.write(`Recovered: ${stats.recovered}`);
+			omegaOled.cursor(4, 0);
+			omegaOled.write(`Deaths: ${stats.deaths}`);
+			omegaOled.executeChain();
 		});
 	} catch (error) {
 		console.log(error.response.body);
