@@ -34,7 +34,7 @@ const query = `{
 		});
 
 		omegaOled.init().then(() => {
-			omegaOled.write(`Coronavirus stats from ${region}:`);
+			omegaOled.write(`Status for ${region}:`);
 			omegaOled.cursor(2, 0);
 			omegaOled.write(`Confirmed: ${stats.confirmed}`);
 			omegaOled.cursor(3, 0);
