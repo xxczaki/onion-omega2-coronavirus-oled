@@ -13,7 +13,7 @@ const query = `{
     }
 }`;
 
-setInterval(async () => {
+const fetchAndDisplay = async () => {
 	try {
 		let stats = {
 			confirmed: undefined,
@@ -47,4 +47,7 @@ setInterval(async () => {
 	} catch (error) {
 		console.log(error.response.body);
 	}
-}, 300000);
+};
+
+fetchAndDisplay();
+setInterval(fetchAndDisplay(), 300000);
