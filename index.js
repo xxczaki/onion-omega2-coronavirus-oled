@@ -50,4 +50,4 @@ const fetchAndDisplay = async () => {
 };
 
 fetchAndDisplay();
-setInterval(fetchAndDisplay, 300000);
+setInterval(fetchAndDisplay, 3600000);
