@@ -1,5 +1,5 @@
 {
-  "name": "omega-onion2-coronavirus-oled",
+  "name": "onion-omega2-coronavirus-oled",
   "version": "1.0.0",
   "description": "Display coronavirus stats on the Omega Onion 2 OLED Extension",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xxczaki/omega-onion2-coronavirus-oled.git"
+    "url": "git+https://github.com/xxczaki/onion-omega2-coronavirus-oled.git"
   },
   "keywords": [
     "coronavirus",
@@ -21,9 +21,9 @@
   "author": "Antoni Kepinski <a@kepinski.me> (https://kepinski.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xxczaki/omega-onion2-coronavirus-oled/issues"
+    "url": "https://github.com/xxczaki/onion-omega2-coronavirus-oled/issues"
   },
-  "homepage": "https://github.com/xxczaki/omega-onion2-coronavirus-oled#readme",
+  "homepage": "https://github.com/xxczaki/onion-omega2-coronavirus-oled#readme",
   "dependencies": {
     "graphql-got": "^0.1.2",
     "onion-omega-oled": "^1.0.7"
