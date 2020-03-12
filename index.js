@@ -38,6 +38,15 @@ const query = `{
 			setTimeout(() => {
 				omegaOled.cursor(2, 0);	
 			}, 1000);
+			omegaOled.write(`Confirmed: ${stats.confirmed}`);
+			setTimeout(() => {
+				omegaOled.cursor(3, 0);	
+			}, 1000);
+			omegaOled.write(`Recovered: ${stats.recovered}`);
+			setTimeout(() => {
+				omegaOled.cursor(4, 0);
+			}, 1000);
+			omegaOled.write(`Deaths: ${stats.deaths}`);
 		});
 	} catch (error) {
 		console.log(error.response.body);
