@@ -35,7 +35,9 @@ const query = `{
 
 		omegaOled.init().then(() => {
 			omegaOled.write(`Status for ${region}:`);
-			omegaOled.cursor(2, 0);
+			setTimeout(() => {
+				omegaOled.cursor(2, 0);	
+			}, 1000);
 		});
 	} catch (error) {
 		console.log(error.response.body);
